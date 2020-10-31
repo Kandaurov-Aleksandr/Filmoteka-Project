@@ -50,9 +50,12 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
     "lodash.debounce": "^4.0.8",
     "material-design-icon-fonts": "^3.0.1"
+    "pagination": "^0.4.6",
+    "spin.js": "^4.1.0"
   }
 }
