@@ -4,21 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>PROJECT-"FILMOTEKA"</title>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Filmoteka</title>
   </head>
-
   <body>
-    <h1>Test</h1>
-    
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <div class="container">
+      <section class="film-card">
+        <div class="film-card__poster">
+          <img
+            src="./images/poster_desktop.png"
+            alt="film.name"
+            class="film-card__poster-img"
+          />
+        </div>
+        <div class="film-card__description">
+          <h1 class="film-card__description-title">Film Title</h1>
+          <p class="film-card__description-vote headers">
+            Vote / Votes
+            <span class="film-card__description-vote--span secondary-headers"
+              ><span class="film-card__description-vote--span-rating">7.3</span>
+              <span class="headers slash">/</span> 1260</span
+            >
+          </p>
+          <p class="film-card__description-pop headers">
+            Popularity
+            <span class="film-card__description-pop--span secondary-headers"
+              >100.2</span
+            >
+          </p>
+          <p class="film-card__description-orig_title headers">
+            Original Title
+            <span
+              class="film-card__description-orig_title--span secondary-headers"
+              >Some Original Title</span
+            >
+          </p>
+          <p class="film-card__description-genre headers">
+            Genre
+            <span class="film-card__description-genre--span secondary-headers"
+              >Western</span
+            >
+          </p>
+          <p class="film-card__description-about">
+            <span class="film-card__description-about--span">About</span>Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolore
+            tempora ut commodi nostrum quia obcaecati, nisi incidunt
+            necessitatibus, quasi fugiat sunt. Fugit modi repellat nam culpa!
+            Error id asperiores tenetur quasi molestiae dolore non ipsum rerum,
+            ratione facere est quam itaque odio corporis maiores praesentium at
+            laboriosam veniam ex optio iure maxime cumque animi. Autem expedita
+            debitis mollitia iusto reprehenderit, beatae quaerat explicabo id,
+            atque dolor voluptate minus. Error ea commodi explicabo ex eius
+            maxime, sint tempora corrupti vitae?
+          </p>
+          <div class="film-card__description-buttons">
+            <button class="film-card__description-buttons--watched">
+              Add to watched
+            </button>
+            <button class="film-card__description-buttons--queue">
+              Add to queue
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
