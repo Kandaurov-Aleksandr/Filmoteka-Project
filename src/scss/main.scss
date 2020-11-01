@@ -5,15 +5,16 @@
   .wrapper{
       min-width: 320px;
       margin: 0 auto;
-      min-height: 1800px;
+      // min-height: 1800px;
+      max-height: auto;
   }
   .main{
     margin: 0 auto ;
     margin-top: 20px;
     width: 87.5%;
+    height: 1680px;
     padding-right: 6.25%;
     padding-left: 6.25%;
-
   }
   .main__list{
     display: flex;
@@ -25,24 +26,28 @@
       background-size: cover;
       width: 100%;
       height: 93.5%;
+      border-radius: 5px;
   }
   .main__cards_img-2{
     background-image: url(/images/main/Monster_hunter.png);
     background-size: cover;
     width: 100%;
     height: 93.5%;
+    border-radius: 5px;
   } 
   .main__cards_img-3{
     background-image: url(/images/main/Once_upon_a_time....png);
     background-size: cover;
     width: 100%;
     height: 93.5%;
+    border-radius: 5px;
   } 
   .main__cards_img-4{
     background-image: url(/images/main/Little_women.png);
     background-size: cover;
     width: 100%;
     height: 93.5%;
+    border-radius: 5px;
   } 
   .main__cards:nth-child(5),
   .main__cards:nth-child(6),
@@ -53,9 +58,10 @@
   }
   .main__cards{
     display: block;
-    height: 440px;
-    width: 100%;
     margin-bottom: 20px;
+    position: relative;
+    width: 75vw;
+    height: 120vw;
   }
   .main__cards a{
     text-decoration: none;
@@ -68,7 +74,7 @@
   }
   h3{
   display: block;
-  height: 31px;
+  height: auto;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -79,7 +85,7 @@
   }
   h3 span{
   display: block;
-  height: 31px;
+  height: auto;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -87,6 +93,9 @@
   line-height: 14px;
   text-transform: none;
   color: #ee660b;
+  }
+  .main__cards:nth-child(4){
+    margin-bottom: 40px;
   }
   .title:hover{
     text-decoration: underline;
@@ -119,48 +128,56 @@
         background-size: cover;
         width: 105%;
         height: 93.5%;
+        border-radius: 5px;
     }
     .main__cards_img-2{
       background-image: url(/images/main/Monster_hunter.png);
       background-size: cover;
       width: 105%;
       height: 93.5%;
+      border-radius: 5px;
     } 
     .main__cards_img-3{
       background-image: url(/images/main/Once_upon_a_time....png);
       background-size: cover;
       width: 105%;
       height: 93.5%;
+      border-radius: 5px;
     } 
     .main__cards_img-4{
       background-image: url(/images/main/Little_women.png);
       background-size: cover;
       width: 105%;
       height: 93.5%;
+      border-radius: 5px;
     } 
     .main__cards_img-5{
         background-image: url(/images/main/Aquarela.png);
         background-size: cover;
         width: 105%;
         height: 93.5%;
+        border-radius: 5px;
     } 
     .main__cards_img-6{
         background-image: url(/images/main/David_Crosby.png);
         background-size: cover;
         width: 105%;
         height: 93.5%;
+        border-radius: 5px;
     } 
     .main__cards_img-7{
         background-image: url(/images/main/Moon.png);
         background-size: cover;
         width: 105%;
         height: 93.5%;
+        border-radius: 5px;
     } 
     .main__cards_img-8{
         background-image: url(/images/main/A_fistful_of_lead.png);
         background-size: cover;
         width: 105%;
         height: 93.5%;
+        border-radius: 5px;
     } 
     .main__cards:nth-child(5),
     .main__cards:nth-child(6),
@@ -170,8 +187,11 @@
   }
     .main__cards{
         display: block;
-        height: 440px;
-        width: 45%;
+        // height: 440px;
+        // width: 45%;
+        position: relative;
+        width: 33.6vw;
+        height: 55vw;
         margin-bottom: 30px;
       }
     .main__cards:nth-child(1),
@@ -179,6 +199,10 @@
     .main__cards:nth-child(5),
     .main__cards:nth-child(7){
         margin-right: 7.8%;
+    }
+    .main__cards:nth-child(7),
+    .main__cards:nth-child(8){
+      margin-bottom: 90px;
     }
 }
 
@@ -190,6 +214,7 @@
     }
     .main{
        width: 882px;
+       height: 1400px;
        padding-right: 0;
        padding-left: 0;
        margin: 0 auto;
