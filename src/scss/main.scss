@@ -5,14 +5,13 @@
   .wrapper{
       min-width: 320px;
       margin: 0 auto;
-      // min-height: 1800px;
       max-height: auto;
   }
   .main{
     margin: 0 auto ;
     margin-top: 20px;
     width: 87.5%;
-    height: 1680px;
+    min-height: 1420px;
     padding-right: 6.25%;
     padding-left: 6.25%;
   }
@@ -59,7 +58,6 @@
   .main__cards{
     display: block;
     margin-bottom: 20px;
-    position: relative;
     width: 75vw;
     height: 120vw;
   }
@@ -74,25 +72,19 @@
   }
   h3{
   display: block;
-  height: auto;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-family: "Roboto Bold";
+  font-size: 3.5vh;
+  font-size: 3.5vw;
   text-transform: uppercase;
-  color: #000000;
+  color: $main-txt;
   }
   h3 span{
   display: block;
-  height: auto;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-family: "Roboto Bold";
+  font-size: 3.5vh;
+  font-size: 3.5vw;
   text-transform: none;
-  color: #ee660b;
+  color: $highlighter;
   }
   .main__cards:nth-child(4){
     margin-bottom: 40px;
@@ -102,7 +94,7 @@
   }
   .title span:hover{
     text-decoration: underline;
-    color: #ee660b;
+    color: $highlighter;
   }
 
 
@@ -185,11 +177,22 @@
     .main__cards:nth-child(8){
         display: block;
   }
+  .title{
+    padding-top: 12px;
+  }
+  .title span{
+    padding-top: 3px;
+  }
+  h3{
+  font-size: 1.6vh;
+  font-size: 1.5vw;
+  }
+  h3 span{
+  font-size: 1.6vh;
+  font-size: 1.5vw;
+  }
     .main__cards{
         display: block;
-        // height: 440px;
-        // width: 45%;
-        position: relative;
         width: 33.6vw;
         height: 55vw;
         margin-bottom: 30px;
@@ -211,6 +214,7 @@
         width: 1024px;
         margin: 0 auto;
         height: 1380px;
+
     }
     .main{
        width: 882px;
@@ -281,8 +285,17 @@
         height: 398px;
     }
     .title{
-        padding-top: 15px;
-      } 
+        padding-top: 10px;
+    } 
+    .title span{
+        padding-top: 3px;
+    }
+    h3{
+      font-size: 14px;
+      }
+      h3 span{
+      font-size: 14px;
+      }
     .main__cards{
         display: block;
         height: 440px;
