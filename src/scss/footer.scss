@@ -1,9 +1,11 @@
+
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 }
+
 
 .footer__container {
   display: flex;
@@ -24,11 +26,13 @@
   line-height: 16px;
   letter-spacing: 0, 03;
 
+ 
+
   svg {
     width: 16px;
     height: 16px;
   }
-}
+
 
 .copyright {
   fill: #656565;
@@ -44,3 +48,19 @@
   color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }
+
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    height: 77px;
+  }
+
+  .footer__text {
+    font-size: 16px;
+    line-height: 19px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
