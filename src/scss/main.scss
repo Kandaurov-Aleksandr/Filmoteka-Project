@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper{
+      min-width: 320px;
+      margin: 0 auto;
+      min-height: 1800px;
+  }
+  .main{
+    margin: 0 auto ;
+    margin-top: 20px;
+    width: 87.5%;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
+
+  }
+  .main__list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .main__cards_img-1{
+      background-image: url(/images/main/Greyhound.png);
+      background-size: cover;
+      width: 100%;
+      height: 93.5%;
+  }
+  .main__cards_img-2{
+    background-image: url(/images/main/Monster_hunter.png);
+    background-size: cover;
+    width: 100%;
+    height: 93.5%;
+  } 
+  .main__cards_img-3{
+    background-image: url(/images/main/Once_upon_a_time....png);
+    background-size: cover;
+    width: 100%;
+    height: 93.5%;
+  } 
+  .main__cards_img-4{
+    background-image: url(/images/main/Little_women.png);
+    background-size: cover;
+    width: 100%;
+    height: 93.5%;
+  } 
+  .main__cards:nth-child(5),
+  .main__cards:nth-child(6),
+  .main__cards:nth-child(7),
+  .main__cards:nth-child(8),
+  .main__cards:nth-child(9){
+    display: none;
+  }
+  .main__cards{
+    display: block;
+    height: 440px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main__cards a{
+    text-decoration: none;
+  }
+  .title{
+    padding-top: 5px;
+  }
+  .title span{
+    padding-top: 2px;
+  }
+  h3{
+  display: block;
+  height: 31px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  }
+  h3 span{
+  display: block;
+  height: 31px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: none;
+  color: #ee660b;
+  }
+  .title:hover{
+    text-decoration: underline;
+  }
+  .title span:hover{
+    text-decoration: underline;
+    color: #ee660b;
+  }
+
+
+@media (min-width: 768px) {
+    .wrapper{
+        min-width: 768px;
+        margin: 0 auto;
+        min-height: 1452px;
+    }
+    .main{
+        width: 87.5%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    .main__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style-type: none;
+      }
+    .main__cards_img-1{
+        background-image: url(/images/main/Greyhound.png);
+        background-size: cover;
+        width: 105%;
+        height: 93.5%;
+    }
+    .main__cards_img-2{
+      background-image: url(/images/main/Monster_hunter.png);
+      background-size: cover;
+      width: 105%;
+      height: 93.5%;
+    } 
+    .main__cards_img-3{
+      background-image: url(/images/main/Once_upon_a_time....png);
+      background-size: cover;
+      width: 105%;
+      height: 93.5%;
+    } 
+    .main__cards_img-4{
+      background-image: url(/images/main/Little_women.png);
+      background-size: cover;
+      width: 105%;
+      height: 93.5%;
+    } 
+    .main__cards_img-5{
+        background-image: url(/images/main/Aquarela.png);
+        background-size: cover;
+        width: 105%;
+        height: 93.5%;
+    } 
+    .main__cards_img-6{
+        background-image: url(/images/main/David_Crosby.png);
+        background-size: cover;
+        width: 105%;
+        height: 93.5%;
+    } 
+    .main__cards_img-7{
+        background-image: url(/images/main/Moon.png);
+        background-size: cover;
+        width: 105%;
+        height: 93.5%;
+    } 
+    .main__cards_img-8{
+        background-image: url(/images/main/A_fistful_of_lead.png);
+        background-size: cover;
+        width: 105%;
+        height: 93.5%;
+    } 
+    .main__cards:nth-child(5),
+    .main__cards:nth-child(6),
+    .main__cards:nth-child(7),
+    .main__cards:nth-child(8){
+        display: block;
+  }
+    .main__cards{
+        display: block;
+        height: 440px;
+        width: 45%;
+        margin-bottom: 30px;
+      }
+    .main__cards:nth-child(1),
+    .main__cards:nth-child(3),
+    .main__cards:nth-child(5),
+    .main__cards:nth-child(7){
+        margin-right: 7.8%;
+    }
+}
+
+@media (min-width: 1024px){
+    .wrapper{
+        width: 1024px;
+        margin: 0 auto;
+        height: 1380px;
+    }
+    .main{
+       width: 882px;
+       padding-right: 0;
+       padding-left: 0;
+       margin: 0 auto;
+       margin-top: 20px;
+    }
+    .main__list{
+       display: flex;
+       flex-wrap: wrap;
+       list-style-type: none;
+       justify-content: space-between;
+    }
+    .main__cards_img-1{
+        background-image: url(/images/main/Greyhound.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    }
+    .main__cards_img-2{
+      background-image: url(/images/main/Monster_hunter.png);
+      background-size: cover;
+      width: 274px;
+      height: 398px;
+    } 
+    .main__cards_img-3{
+      background-image: url(/images/main/Once_upon_a_time....png);
+      background-size: cover;
+      width: 274px;
+      height: 398px;
+    } 
+    .main__cards_img-4{
+      background-image: url(/images/main/Little_women.png);
+      background-size: cover;
+      width: 274px;
+      height: 398px;
+    } 
+    .main__cards_img-5{
+        background-image: url(/images/main/Aquarela.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    } 
+    .main__cards_img-6{
+        background-image: url(/images/main/David_Crosby.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    } 
+    .main__cards_img-7{
+        background-image: url(/images/main/Moon.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    } 
+    .main__cards_img-8{
+        background-image: url(/images/main/A_fistful_of_lead.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    } 
+    .main__cards_img-9{
+        background-image: url(/images/main/Bad_Boys.png);
+        background-size: cover;
+        width: 274px;
+        height: 398px;
+    }
+    .title{
+        padding-top: 15px;
+      } 
+    .main__cards{
+        display: block;
+        height: 440px;
+        width: 274px;
+        margin-bottom: 30px;
+    }
+    .main__cards:nth-child(9){
+        display: block;
+      }
+    .main__cards:nth-child(3){
+        margin-right: 0;
+    }
+    .main__cards:nth-child(1),
+    .main__cards:nth-child(2),
+    .main__cards:nth-child(4),
+    .main__cards:nth-child(5),
+    .main__cards:nth-child(7),
+    .main__cards:nth-child(8){
+        margin-right: 30px;
+    }
+}
