@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QfWi:function(i,o,s){"use strict";s.r(o);s("h3ov");alert("Hello! This is test js")},h3ov:function(i,o,s){}},[["QfWi",1]]]);
-//# sourceMappingURL=main.414f70b82db44b45b3d7.js.map
