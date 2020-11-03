@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./index.js"],"names":["alert"],"mappings":"2FAAA,iBAIAA,MAAM,2B","file":"main.414f70b82db44b45b3d7.js","sourcesContent":["import './style.scss';\r\n\r\n\r\n\r\nalert(\"Hello! This is test js\");"],"sourceRoot":""}
