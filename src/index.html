@@ -10,33 +10,33 @@
 
   <body>
        
-    <header id="header" class="home">
-      <nav class="page__nav">
-        <h1 class="logo">
-          <a class="home-link" href="./index.html">Filmoteka</a>
-        </h1>
-        <div id="home" class="route">Home</div>
-        <div id="mylibrary" class="route">My Library</div>
-      </nav>
-      <div class="form">
-        <form class="search-form">
-          <div class="input__wrapper">
-            <input
-              type="text"
-              class="form__input"
-              name="query"
-              id="searchQuery"
-              placeholder="Поиск фильмов"
-              autocomplete="off"
-            />
-            <button type="submit" class="form__button">
-              <span class="form__search"></span>
-            </button>
-          </div>
+    <header class="home" id="header">
+      <section class="header-wrapper">
+        <div class="header__logo">
+          <a href="#" class="header__logo-icon"></a>
+          <h1 class="header__logo-name">Filmoteka</h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link header__link--hover">home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link header__link--hover">my library</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="section__form">
+        <form class="header__form" id="search-form">
+          <input type="text" autofocus name="query" autocomplete="off" placeholder="Поиск фильмов" class="header__form-input" />
+          <button type="submit" class="header__btn-search"></button>
         </form>
-        <div class="form__warning"></div>
-      </div>
-      <div class="js-buttons"></div>
+      </section>
+      <section class="header__warning">
+        <!-- Добавить в параграф класс ------ js-is-hidden ------- для отображения WARNING -->
+        <p class="header__warning-paragraph">Search result not successfull. Enter the correct movie name and</p>
+      </section>
     </header>
     <main class="wrapper">
       <div class="main">
