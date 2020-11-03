@@ -1,0 +1,47 @@
+@media (min-width: 320px) {
+  .section__form {
+    margin-bottom: 20px;
+  }
+
+  .header__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 276px;
+    height: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px inset $header-txt;
+  }
+
+  .header__form-input {
+    width: 320px;
+    font-family: 'Roboto Regular';
+    font-size: 14px;
+    background-color: transparent;
+    color: $header-txt;
+    border: none;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: $header-txt;
+  }
+
+  .header__btn-search {
+    background-image: url(./images/icons-header/search.png);
+    background-color: transparent;
+    border-style: none;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__form {
+    width: 340px;
+  }
+}
