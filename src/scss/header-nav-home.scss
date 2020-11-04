@@ -1,17 +1,18 @@
-/* =========== Warning Info js-is-hidden ================== */
+/* =========== Warning Info js-header-is-hidden ================== */
 
-.header__warning {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+.header {
+  &__warning {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__warning-paragraph {
+    display: none;
+  }
 }
 
-.header__warning-paragraph {
-  display: none;
-}
-
-.js-is-hidden {
+.js-header-is-hidden {
   display: block;
   margin: 0;
   font-family: 'Roboto Regular';
@@ -21,7 +22,7 @@
 
 // ============================================
 
-@media (min-width: 320px) {
+@media (min-width: 100px) {
   #header {
     width: 100%;
     height: 230px;
@@ -48,24 +49,25 @@
     display: flex;
     align-items: center;
   }
-
   .header__logo-name {
     display: none;
   }
+}
 
-  .header__logo-icon {
-    background-image: url(./images/icons-header/film.png);
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
-  }
+.header__logo-icon {
+  background-image: url(./images/icons-header/film.png);
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
 
-  .header__nav {
+.header {
+  &__nav {
     display: flex;
     height: 20px;
   }
 
-  .header__list {
+  &__list {
     width: 146px;
     margin: 0;
     padding: 0;
@@ -74,32 +76,32 @@
     list-style: none;
   }
 
-  .header__item {
+  &__item {
     height: 12px;
+
+    &:hover a:after {
+      display: block;
+    }
   }
 
-  .header__link {
+  &__link {
     text-decoration: none;
     color: $header-txt;
     text-transform: uppercase;
     font-size: 12px;
     font-family: 'Roboto Medium';
-  }
 
-  .header__link--hover:after {
-    content: '';
-    display: none;
-    margin-top: 2px;
-    height: 3px;
-    background-color: $highlighter;
-  }
-
-  .header__item:hover a:after {
-    display: block;
+    &--hover:after {
+      content: '';
+      display: none;
+      margin-top: 2px;
+      height: 3px;
+      background-color: $highlighter;
+    }
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .home {
     background-image: linear-gradient($overlay, $overlay),
       url(./images/header_home_tablet.jpg);
