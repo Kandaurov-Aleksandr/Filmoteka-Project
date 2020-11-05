@@ -1,4 +1,5 @@
 import './style.scss';
+import './js/header-form'
 
 
 import libraryItems from './templates/library.hbs'
@@ -34,3 +35,4 @@ function renderHomePage(arr) {
 
 refs.homePageBtn.addEventListener('click', markupHomePage);
 refs.libraryBtn.addEventListener('click', markupLibrary);
+
