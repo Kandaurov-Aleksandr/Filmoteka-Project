@@ -1,5 +1,6 @@
 import './style.scss';
 import './js/header-form'
+import './js/preloader'
 
 
 import libraryItems from './templates/library.hbs'
