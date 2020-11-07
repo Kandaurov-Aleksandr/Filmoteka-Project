@@ -50,6 +50,7 @@
 .cancel {
   opacity: 0;
   display: block;
+  z-index: -30;
 }
 
 @-webkit-keyframes spin {
