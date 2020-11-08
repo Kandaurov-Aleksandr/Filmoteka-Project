@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
   }
+  .js-display-none {
+    display: none;
+  }
   .wrapper{
     min-width: 320px;
     margin: 0 auto;
@@ -95,6 +98,7 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .main__cards{
     width: 33.6vw;
     height: 55vw;
@@ -102,8 +106,10 @@
     div{
       width: 105%;
       height: 93.5%;
+
       background-size: cover;
       border-radius: 5px;
+
     }
     &:nth-child(5),
     &:nth-child(6),
@@ -117,6 +123,11 @@
     &:nth-child(7){
       margin-right: 7.8%;
     }
+    &:nth-child(7),
+    &:nth-child(8){
+      margin-bottom: 90px;
+    }
+
   }
   .main__cards_img-5{
       background-image: url(/images/main/Aquarela.png);
@@ -193,4 +204,3 @@
       }
   } 
 }
-//////
