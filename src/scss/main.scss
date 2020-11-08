@@ -117,10 +117,6 @@
     &:nth-child(7){
       margin-right: 7.8%;
     }
-    &:nth-child(7),
-    &:nth-child(8){
-      margin-bottom: 90px;
-    }
   }
   .main__cards_img-5{
       background-image: url(/images/main/Aquarela.png);
@@ -149,6 +145,7 @@
 @media (min-width: 1024px){
   .wrapper{
       width: 1024px;
+      margin-top: 60px;
   }
   .main{
       width: 882px;
