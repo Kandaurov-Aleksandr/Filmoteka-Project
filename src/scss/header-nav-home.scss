@@ -11,7 +11,7 @@
     display: none;
   }
 }
-
+// ========================
 .js-header-is-hidden {
   display: block;
   margin: 0;
@@ -19,7 +19,6 @@
   font-size: 14px;
   color: $highlighter;
 }
-
 // ============================================
 
 // @media (min-width: 100px) {
@@ -114,6 +113,44 @@
   }
 }
 
+// =================================================
+.header-mylibrary {
+  display: none;
+  // display: flex;
+  justify-content: center;
+
+  &__btn {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    height: 44px;
+    width: 130px;
+    border-radius: 6px;
+    border: 1px solid white;
+    opacity: 0.9;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff6b01;
+      border: none;
+      transition: all 300ms linear;
+      opacity: 1;
+      transform: scale(1.04);
+    }
+  }
+}
+.header__btn-watched {
+  margin-right: 20px;
+}
+// ======================
+.js-header-watched-is-hidden {
+  display: flex;
+}
+
+// =================================================
 @media (min-width: 768px) {
   .home {
     background-image: linear-gradient($overlay, $overlay),

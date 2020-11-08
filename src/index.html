@@ -27,16 +27,23 @@
           </ul>
         </nav>
       </section>
-      <section class="section__form">
+      <!-- ================== FORM ===================== -->
+      <section class="section__form">  <!-- скрыть форму классом (js-header-form-hidden) -->
         <form class="header__form" id="search-form">
           <input type="text" autofocus name="query" autocomplete="off" placeholder="Поиск фильмов" class="header__form-input" />
           <button type="submit" class="header__btn-search"></button>
         </form>
       </section>
+      <!-- WATCHED Button (добавить класс для отображения кнопок watched и queue)-->
+      <section class="header-mylibrary"> <!-- js-header-watched-is-hidden -->
+        <button type="submit" class="header__btn-watched header-mylibrary__btn">watched</button>
+        <button type="submit" class="header__btn-queue header-mylibrary__btn">queue</button>
+      </section>
+
       <section class="header__warning">
         <!-- Добавить в параграф класс ------ js-header-is-hidden ------- для отображения WARNING -->
         <p class="header__warning-paragraph">Search result not successfull. Enter the correct movie name and</p>
-        <!-- ================================================================================================ -->
+        <!-- ========================================================================================== -->
       </section>
     </header>
     <main class="wrapper">
