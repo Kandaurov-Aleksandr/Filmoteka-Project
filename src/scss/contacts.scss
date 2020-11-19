@@ -1,18 +1,25 @@
+.my-team{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: $highlighter;
+  text-align: center;
+}
 .contacts {
-  height: 350px;
+  // height: 350px;
   display: flex;
   justify-content: space-between;
   // flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1400px;
+  // margin-bottom: 1400px;
   list-style-type: none;
 
   .contacts__item {
     // background-color: #f7f7f7;
     
-    width: 150px;
-    height: 250px;
+    width: 274px;
+    // height: 398px;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -22,8 +29,8 @@
   margin-bottom: 20px;
 
   .contacts__card__image {
-    width: 150px;
-    height: 200px;
+    width: 274px;
+    height: 398px;
     margin-bottom: 10px;
   }
 }
@@ -57,6 +64,6 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 350px;
+    // margin-bottom: 350px;
   }
 }
