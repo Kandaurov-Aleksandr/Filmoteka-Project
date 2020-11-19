@@ -1,0 +1,204 @@
+#header {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 46px 50px;
+
+  &__logo {
+    margin: 0;
+    margin-right: auto;
+  }
+  &__logo-link {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Roboto Medium';
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: -30px;
+      left: -20px;
+      width: 48px;
+      height: 48px;
+      background-image: url('./images/header-icons/film.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.6;
+    }
+  }
+}
+.header__link {
+  color: $header-txt;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto Medium';
+  opacity: 0.9;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
+    opacity: 1;
+  }
+}
+
+.selected {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: $highlighter;
+    width: 100%;
+    height: 3px;
+    margin: 3px auto 0px;
+  }
+}
+
+#home {
+  margin-right: 42px;
+}
+
+.js-header-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.library__button {
+  width: 130px;
+  height: 44px;
+
+  border: 1px solid $btn-txt-hover;
+  border-radius: 5px;
+  color: $btn-txt-hover;
+  font-size: 12px;
+  line-height: 16px;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.library__button--active {
+  border: none;
+  outline: none;
+}
+
+.home {
+  background: url('./images/header_home_mobile.png'),
+    linear-gradient($overlay, $overlay);
+}
+
+.my-library {
+  background: url('./images/header_queue_watched_mobile.png'),
+    linear-gradient($overlay, $overlay);
+  .header-nav {
+    padding: 46px 20px;
+  }
+}
+
+.header-detalis {
+  background: url('./images/header_details_mobile.png'),
+    linear-gradient($overlay, $overlay);
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    &__logo {
+      opacity: 0.9;
+
+      &:hover {
+        transition: all 200ms linear;
+        opacity: 1;
+      }
+    }
+    &__logo-link {
+      font-size: 30px;
+      line-height: 36px;
+      color: $header-txt;
+      padding-left: 40px;
+
+      &::before {
+        top: -5px;
+        left: -5px;
+      }
+    }
+  }
+
+  .library__button {
+    width: 140px;
+  }
+  .home {
+    background: url('./images/header_home_tablet.png'),
+      linear-gradient($overlay, $overlay);
+  }
+
+  .my-library {
+    background: url('./images/header_queue_watched_tablet.png'),
+      linear-gradient($overlay, $overlay);
+    .header-nav {
+      padding: 46px 50px;
+    }
+  }
+
+  .header-detalis {
+    background: url('./images/header_details_tablet.png'),
+      linear-gradient($overlay, $overlay);
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    background: url('./images/header_home_desktop.png'),
+      linear-gradient($overlay, $overlay);
+  }
+  .home-page {
+    background: url('./images/header_home_desktop.png'),
+      linear-gradient($overlay, $overlay);
+  }
+
+  .my-library {
+    background: url('./images/header_queue_watched_desktop.png'),
+      linear-gradient($overlay, $overlay);
+  }
+
+  .header-detalis {
+    background: url('./images/header_details_desktop.png'),
+      linear-gradient($overlay, $overlay);
+  }
+
+  .header-nav__logo {
+    animation: logo-appear 1500ms linear 200ms;
+  }
+
+  @keyframes logo-appear {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+      color: #778899;
+    }
+    50% {
+      transform: scale(0.8);
+      opacity: 1;
+      color: #808080;
+    }
+    100% {
+      transform: scale(1);
+      color: #ffffff;
+    }
+  }
+}

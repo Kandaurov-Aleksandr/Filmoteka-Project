@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#main {
+  padding-top: 20px;
+  min-width: 320px;
+  margin: 0 auto;
+  max-height: auto;
+}
+
+.main__list {    
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  &__card {  
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 75vw;
+    width: 87.5%;
+    max-height: auto;  
+    border-radius: 5px;
+  }
+}
+
+.main__list__img--poster {
+  width: 100%;
+  display: block;
+  background-color: $footer-bg;
+  border-radius: 5px;
+}
+
+.title__film{
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 7px;
+  font-size: 4.3vh;
+  font-size: 4.3vw;
+  text-transform: uppercase;
+  color: $main-txt;
+  font-weight: 600;
+  font-family: "Roboto Bold";
+  &:hover{
+    color: $highlighter;
+  }
+}
+
+.movie__box {
+  display: flex;
+  font-family: "Roboto Medium";
+}
+
+.title__description {
+  padding: 0;
+  margin: 0;
+  font-size: 4.3vh;
+  font-size: 4.3vw;
+  color: $highlighter;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media  (min-width: 768px) {
+  #main {
+    margin-top: 30px;
+    min-width: 768px;
+  }
+  .main__list {
+    width: 87.5%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    &__card{
+      width: 42vw;
+      margin-bottom: 30px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+  .main__list__img--poster {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .movie__box {
+    margin-bottom: 4px;
+  }
+  .title__film{
+    font-size: 1.9vh;
+    font-size: 1.9vw;
+    &:hover{
+      color: $highlighter;
+    }
+  }
+  .title__description {
+    margin-bottom: 0px;
+    font-size: 1.9vh;
+    font-size: 1.9vw;
+    &:hover{
+      text-decoration: underline;
+      color: $highlighter;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #main {
+    margin-top: 30px;
+    width: 1024px;
+  }
+  .movie {
+    min-width: 86%;
+  }
+  .main__list__card{
+    width: 274px;
+    margin-bottom: 30px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .title__film{
+    font-size: 14px;
+  }
+  .title__description {
+   margin-bottom: 0px;
+   font-size: 14px;
+   &:hover{
+    text-decoration: underline;
+    color: $highlighter;
+  }
+  }
+  .main__list__img--poster {
+    width: 274px;
+    height: 398px;
+  }
+}
