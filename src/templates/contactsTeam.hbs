@@ -1,109 +1,82 @@
 <h1 class="my-team">НАД ПРОЭКТОМ РАБОТАЛИ:</h1>
 <ul class="contacts" id="cntcts">
-    {{!-- {{#each this}} --}}
-
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_0rI4k7sSzHbO1FaF8JAt7oFB2DCcuB61Q&usqp=CAU"
-                width="100px" height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="https://wdho.ru/plugins/imageviewer/site/direct.php?s=ilYB&/Aleksandr.jpg" alt="Alexandr"
+                class="contacts__card__image" />
             <div class="card__content">
                 <h2 class="card__name">Alexandr</h2>
-                <p class="card__profession">
-                </p>
                 <p class="card__description">
                     Team Lead
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="data:image/jpeg;base64,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"
-                width="100px" height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="	https://wdho.ru/plugins/imageviewer/site/direct.php?s=my7F&/Katya.jpg" alt="Katya"
+                class="contacts__card__image" />
             <div class="card__content">
                 <h2 class="card__name">Katerina</h2>
-                <p class="card__profession">
-                </p>
                 <p class="card__description">
                     Scrum Master
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="https://i.pinimg.com/originals/ff/b3/9d/ffb39d3ef4c8f7d999f8336133878529.jpg" width="100px"
-                height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="https://wdho.ru/plugins/imageviewer/site/direct.php?s=my7E&/Igor.jpg" alt="Igor"
+                class="contacts__card__image" />
             <div class="card__content">
-                <h2 class="card__name">Alexandr</h2>
-                <p class="card__profession">
-                </p>
+                <h2 class="card__name">Igor</h2>
                 <p class="card__description">
-                    Team Lead
+                    Developer
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="https://lh3.googleusercontent.com/proxy/eE6aHddjc_P-ziSGzVIv25J9m-iHebYCt63DH2HyMgHW7vg2ZNI3ZcqzcZpZ9-Abv8wrTxvq4almxyFIZJoBY9tPzq8Bd8k6GomBjmoQpuWBAWpwIA"
-                width="100px" height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="https://wdho.ru/plugins/imageviewer/site/direct.php?s=ilYA&/Roman.jpg" alt="Roman"
+                class="contacts__card__image" />
             <div class="card__content">
-                <h2 class="card__name">Alexandr</h2>
-                <p class="card__profession">
-                </p>
+                <h2 class="card__name">Roman</h2>
                 <p class="card__description">
-                    Team Lead
+                    Developer
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="https://s1.1zoom.ru/big3/636/Men_Gray_background_Suit_Necktie_Glance_566541_2200x3300.jpg"
-                width="100px" height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="https://wdho.ru/plugins/imageviewer/site/direct.php?s=my7G&/Ruslan.jpg" alt="Ruslan"
+                class="contacts__card__image" />
             <div class="card__content">
-                <h2 class="card__name">Alexandr</h2>
-                <p class="card__profession">
-                </p>
+                <h2 class="card__name">Ruslan</h2>
                 <p class="card__description">
-                    Team Lead
+                    Developer
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
     <li class="contacts__item">
         <div class="contacts__card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzw8Ea_xqVd1-wKHAx3X3y0cCg0j9XPRZwpA&usqp=CAU"
-                width="100px" height="auto" alt="Alexandr" class="contacts__card__image" />
+            <img src="https://lh3.googleusercontent.com/proxy/JD13vIANL7XDSC2fTQFWD2pkqtCBEAtQyXFZFSyIu6OMghbRInQXx2sKFDCWt8lfvsj-YzFz-ml6HwCYiGb1N3Ym0PMmZYZA_iXLWrWxraAp6ifRE8nkLssNn_q5DSPjB7ZOQI61obJqL5q1"
+                width="100px" height="auto" alt="Yaroslav" class="contacts__card__image" />
             <div class="card__content">
-                <h2 class="card__name">Alexandr</h2>
-                <p class="card__profession">
-                </p>
+                <h2 class="card__name">Yaroslav</h2>
                 <p class="card__description">
-                    Team Lead
+                    Developer
                 </p>
             </div>
-            <button class="card__button button">
-                Details
-            </button>
         </div>
     </li>
-
-    {{!-- {{/each}} --}}
 </ul>
+<div class="teacher">
+    <h2 class="h2__teacher">Our best teacher:<br> <span class="teacher__name">Andrey Volosovich</span></h2>
+    <div class="contacts__item">
+        <img src="https://lh3.googleusercontent.com/proxy/JD13vIANL7XDSC2fTQFWD2pkqtCBEAtQyXFZFSyIu6OMghbRInQXx2sKFDCWt8lfvsj-YzFz-ml6HwCYiGb1N3Ym0PMmZYZA_iXLWrWxraAp6ifRE8nkLssNn_q5DSPjB7ZOQI61obJqL5q1"
+            width="274px" height="398px" alt="Andrey_Volosovich">
+    </div>
+</div>

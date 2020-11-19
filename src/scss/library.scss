@@ -1,6 +1,6 @@
 .library-movies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   list-style: none;
   color: $main-txt;
   width: 280px;
@@ -18,7 +18,7 @@
     justify-content: space-between;
     padding-bottom: 20px;
     margin-bottom: 10px;
-    border-bottom: 1px solid $highlighter;
+    // border-bottom: 1px solid $highlighter;
 
     .lbr-movie__img {
       width: 280px;
@@ -45,8 +45,8 @@
       .lbr-scores__data {
         margin: 0;
         margin-bottom: 10px;
-
         display: flex;
+        
         .scores__rating--orange {
           background-color: $highlighter;
           color: white;
@@ -139,14 +139,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  #main {
+  #content {
     padding-top: 28px;
   }
 
   .library-movies {
     width: 748px;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 
     .lbr-movie-card {
       width: 688px;
@@ -165,9 +166,6 @@
 @media screen and (min-width: 1024px) {
   .library-movies {
     width: 875px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
-    grid-gap: 25px;
 
     .lbr-movie-card {
       width: 425px;

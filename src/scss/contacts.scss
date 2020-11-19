@@ -22,6 +22,11 @@
     // height: 398px;
     text-align: center;
     margin-bottom: 40px;
+
+    &:hover{
+      transform: scale(1.1);
+      transition: all 300ms linear;
+    }
   }
 }
 
@@ -39,8 +44,9 @@
   text-align: center;
 
   .card__name {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 2px;
+    color: $highlighter;
   }
 
   .card__description {
@@ -55,6 +61,24 @@
   box-shadow: 0 0 5px rgb(43, 44, 85);
   font-size: 13px;
   padding: 2px 3px;
+}
+
+.teacher{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 274px;
+  height: auto;
+}
+
+.h2__teacher{
+  font-size: 30px;
+  color: rgb(53, 206, 22);
+}
+.teacher__name{
+  font-size: 24px;
+  color: $highlighter;
 }
 
 @media screen and (min-width: 768px) {
