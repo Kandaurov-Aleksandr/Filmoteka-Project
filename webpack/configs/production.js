@@ -54,5 +54,6 @@ module.exports = env => ({
       chunkFilename: '[name].[id].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({}),
+    
   ],
 });

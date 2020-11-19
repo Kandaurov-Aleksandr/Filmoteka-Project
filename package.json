@@ -56,7 +56,9 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
-    "pagination": "^0.4.6",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "img-loader": "^3.0.1",
+    "pagination": "github:mayuska/pagination",
     "spin.js": "^4.1.0"
   }
 }
